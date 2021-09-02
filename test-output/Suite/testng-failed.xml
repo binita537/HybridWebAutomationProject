@@ -40,17 +40,4 @@
       </class> <!-- com.qaautomation.tests.RegisterPageTest -->
     </classes>
   </test> <!-- RegisterPageTest(failed) -->
-  <test thread-count="4" parallel="tests" name="AccountPageTest(failed)">
-    <classes>
-      <class name="com.qaautomation.tests.AccountPageTest">
-        <methods>
-          <include name="DoVerifyUsername"/>
-          <include name="setReport"/>
-          <include name="flushReport"/>
-          <include name="initialization"/>
-          <include name="quiteBrowser"/>
-        </methods>
-      </class> <!-- com.qaautomation.tests.AccountPageTest -->
-    </classes>
-  </test> <!-- AccountPageTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
