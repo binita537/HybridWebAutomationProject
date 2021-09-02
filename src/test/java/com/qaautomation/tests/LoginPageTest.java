@@ -11,8 +11,7 @@ import com.qaautomation.testbase.TestBase;
 import com.qaautomation.utilities.TestUtils;
 public class LoginPageTest extends TestBase {
 
-	 private WebDriver driver;
-
+	
 	
 
 	LoginPage loginpage;
@@ -26,7 +25,7 @@ public class LoginPageTest extends TestBase {
 	public void doLoginWithCredentail() throws Exception {
 		
 
-		driver = getDriver();
+		
 		test.log(Status.INFO, "Initilising the driver");
 		testutils = new TestUtils(driver);
 		Thread.sleep(2000);

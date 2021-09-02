@@ -15,7 +15,7 @@ public class RegisterPageTest extends TestBase {
 
 
 	
-	private WebDriver driver;
+	
 	
 	RegisterPage registerPage;
 	AccountPage accountpage;
@@ -31,7 +31,7 @@ public class RegisterPageTest extends TestBase {
 		
 		
 		test.log(Status.INFO, "Initilising the driver");
-		driver = getDriver();
+		
 
 		testutils = new TestUtils(driver);
 		homepage = new HomePage(driver);

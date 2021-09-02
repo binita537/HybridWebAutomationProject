@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="4" parallel="tests" name="LoginPageTest(failed)">
-    <classes>
-      <class name="com.qaautomation.tests.LoginPageTest">
-        <methods>
-          <include name="doLoginWithCredentail"/>
-          <include name="setReport"/>
-          <include name="flushReport"/>
-          <include name="initialization"/>
-          <include name="quiteBrowser"/>
-        </methods>
-      </class> <!-- com.qaautomation.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- LoginPageTest(failed) -->
   <test thread-count="4" parallel="tests" name="HomePageTest(failed)">
     <classes>
       <class name="com.qaautomation.tests.HomePageTest">
@@ -27,6 +14,19 @@
       </class> <!-- com.qaautomation.tests.HomePageTest -->
     </classes>
   </test> <!-- HomePageTest(failed) -->
+  <test thread-count="4" parallel="tests" name="LoginPageTest(failed)">
+    <classes>
+      <class name="com.qaautomation.tests.LoginPageTest">
+        <methods>
+          <include name="doLoginWithCredentail"/>
+          <include name="setReport"/>
+          <include name="flushReport"/>
+          <include name="initialization"/>
+          <include name="quiteBrowser"/>
+        </methods>
+      </class> <!-- com.qaautomation.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- LoginPageTest(failed) -->
   <test thread-count="4" parallel="tests" name="RegisterPageTest(failed)">
     <classes>
       <class name="com.qaautomation.tests.RegisterPageTest">

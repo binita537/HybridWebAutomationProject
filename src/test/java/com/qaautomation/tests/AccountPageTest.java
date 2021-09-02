@@ -14,10 +14,10 @@ import com.qaautomation.utilities.TestUtils;
 
 public class AccountPageTest extends TestBase {
 
-	private WebDriver driver;
+	
 
 	LoginPage loginpage;
-	HomePage homapage;
+	HomePage homepage;
 	AccountPage accountpage;
 	TestUtils testutils;
 	RegisterPage registerPage;
@@ -26,20 +26,20 @@ public class AccountPageTest extends TestBase {
 	public void DoVerifyUsername() throws Exception {
 
 		test.log(Status.INFO, "Initilising the driver");
-		driver = getDriver();
-		homapage = new HomePage(driver);
+		
+		homepage = new HomePage(driver);
 		testutils = new TestUtils(driver);
 
 		Thread.sleep(2000);
 		test.log(Status.INFO, "Clicking on NO THANKS button");
-		homapage.clickNoThankButton();
+		homepage.clickNoThankButton();
 
 		String username = testutils.getRandomString();
 		String email = testutils.getRandomString() + "@gmail.com";
 		String password = testutils.getRandomString();
 		
 		test.log(Status.INFO, "Clicking on register page link");
-		registerPage = homapage.clickOnRegisterLink();
+		registerPage = homepage.clickOnRegisterLink();
 		
 		test.log(Status.INFO, "Entering username, email, password and confrim password which genrated randomly");
 		accountpage = registerPage.doRegister(username, email, password);

@@ -1,6 +1,7 @@
 package com.qaautomation.tests;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -10,7 +11,7 @@ import com.qaautomation.testbase.TestBase;
 
 public class HomePageTest extends TestBase {
 
-	private WebDriver driver;
+	
 
    HomePage homepage;
 
@@ -20,7 +21,7 @@ public class HomePageTest extends TestBase {
 	public void DoVerifyHomePage() throws Exception {
 
 		test.log(Status.INFO, "Initilising the driver");
-		driver = getDriver();
+		
 		
 
 		homepage = new HomePage(driver);
