@@ -61,11 +61,11 @@ public class TestUtils {
 		select.selectByVisibleText(VisibleText);
 	}
 
-	public static String getScreenShots(WebDriver driver, String FileName) {
+	public static String getScreenShots(WebDriver driver,String filename) {
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File Source = ts.getScreenshotAs(OutputType.FILE);
-		String FileDestination = System.getProperty("user.dir") + "\\FailedTestCases\\" + FileName + ".png";
+		String FileDestination = System.getProperty("user.dir") + "\\FailedTestCases\\" + filename + ".png";
 		File destinationFile = new File(FileDestination);
 		try {
 			FileUtils.copyFile(Source, destinationFile);

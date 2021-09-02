@@ -32,10 +32,10 @@ public class TestBase {
 
 	public WebDriver driver;
 	public Properties property;
-	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+
 	public static ExtentReports extent;
-	public  static ExtentSparkReporter htmlrepoter;
-	public  static ExtentTest test;
+	public static ExtentSparkReporter htmlrepoter;
+	public static ExtentTest test;
 
 	public TestBase() {
 
@@ -94,31 +94,23 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		tdriver.set(driver);
 
 		driver.get(property.getProperty("Url"));
-		
-		
 
 		test = extent.createTest(method.getName());
 
-		return getDriver();
+		return driver;
 
 	}
 
-	public static WebDriver getDriver() {
-		
-		return tdriver.get();
-	}
-
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void quiteBrowser(ITestResult result) throws IOException {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + "   " + "  FAILED", ExtentColor.RED));
-			String ScreenShotPath=TestUtils.getScreenShots(driver,result.getName());
+			String ScreenShotPath = TestUtils.getScreenShots(driver,result.getName());
+			test.fail(result.getThrowable());
 			test.fail(result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromPath(ScreenShotPath).build());
-		
 			
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + "   " + "  PASSED", ExtentColor.GREEN));
@@ -130,6 +122,6 @@ public class TestBase {
 		}
 
 		driver.quit();
-	} 
+	}
 
 }

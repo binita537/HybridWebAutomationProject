@@ -2,42 +2,12 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-02T20:30:13 IST" name="Suite" finished-at="2021-09-02T20:31:39 IST" duration-ms="85816">
+  <suite started-at="2021-09-02T22:21:28 IST" name="Suite" finished-at="2021-09-02T22:23:32 IST" duration-ms="124307">
     <groups>
     </groups>
-    <test started-at="2021-09-02T20:30:13 IST" name="HomePageTest" finished-at="2021-09-02T20:30:37 IST" duration-ms="23937">
-      <class name="com.qaautomation.tests.HomePageTest">
-        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.HomePageTest@740cae06]" started-at="2021-09-02T20:30:13 IST" name="initialization" finished-at="2021-09-02T20:30:23 IST" duration-ms="9762" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qaautomation.tests.HomePageTest.DoVerifyHomePage() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method signature="DoVerifyHomePage()[pri:0, instance:com.qaautomation.tests.HomePageTest@740cae06]" started-at="2021-09-02T20:30:23 IST" name="DoVerifyHomePage" finished-at="2021-09-02T20:30:31 IST" duration-ms="7813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DoVerifyHomePage -->
-        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.HomePageTest@740cae06]" started-at="2021-09-02T20:30:31 IST" name="quiteBrowser" finished-at="2021-09-02T20:30:37 IST" duration-ms="6318" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DoVerifyHomePage status=SUCCESS method=HomePageTest.DoVerifyHomePage()[pri:0, instance:com.qaautomation.tests.HomePageTest@740cae06] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quiteBrowser -->
-      </class> <!-- com.qaautomation.tests.HomePageTest -->
-    </test> <!-- HomePageTest -->
-    <test started-at="2021-09-02T20:30:13 IST" name="LoginPageTest" finished-at="2021-09-02T20:30:37 IST" duration-ms="23937">
+    <test started-at="2021-09-02T22:21:28 IST" name="LoginPageTest" finished-at="2021-09-02T22:21:41 IST" duration-ms="13704">
       <class name="com.qaautomation.tests.LoginPageTest">
-        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.LoginPageTest@783a467b]" started-at="2021-09-02T20:30:13 IST" name="initialization" finished-at="2021-09-02T20:30:21 IST" duration-ms="8342" status="PASS">
+        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.LoginPageTest@7db12bb6]" started-at="2021-09-02T22:21:28 IST" name="initialization" finished-at="2021-09-02T22:21:33 IST" duration-ms="4859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="doLoginWithCredentail()[pri:0, instance:com.qaautomation.tests.LoginPageTest@783a467b]" started-at="2021-09-02T20:30:21 IST" name="doLoginWithCredentail" finished-at="2021-09-02T20:30:33 IST" duration-ms="11013" status="PASS">
+        <test-method signature="doLoginWithCredentail()[pri:0, instance:com.qaautomation.tests.LoginPageTest@7db12bb6]" started-at="2021-09-02T22:21:33 IST" name="doLoginWithCredentail" finished-at="2021-09-02T22:21:41 IST" duration-ms="8290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginWithCredentail -->
-        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.LoginPageTest@783a467b]" started-at="2021-09-02T20:30:33 IST" name="quiteBrowser" finished-at="2021-09-02T20:30:37 IST" duration-ms="4539" status="PASS">
+        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.LoginPageTest@7db12bb6]" started-at="2021-09-02T22:21:41 IST" name="quiteBrowser" finished-at="2021-09-02T22:21:41 IST" duration-ms="517" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doLoginWithCredentail status=SUCCESS method=LoginPageTest.doLoginWithCredentail()[pri:0, instance:com.qaautomation.tests.LoginPageTest@783a467b] output={null}]]]>
+                <![CDATA[[TestResult name=doLoginWithCredentail status=SUCCESS method=LoginPageTest.doLoginWithCredentail()[pri:0, instance:com.qaautomation.tests.LoginPageTest@7db12bb6] output={null}]]]>
               </value>
             </param>
           </params>
@@ -65,47 +35,9 @@
         </test-method> <!-- quiteBrowser -->
       </class> <!-- com.qaautomation.tests.LoginPageTest -->
     </test> <!-- LoginPageTest -->
-    <test started-at="2021-09-02T20:30:13 IST" name="AccountPageTest" finished-at="2021-09-02T20:30:43 IST" duration-ms="29949">
-      <class name="com.qaautomation.tests.AccountPageTest">
-        <test-method is-config="true" signature="setReport()[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2]" started-at="2021-09-02T20:30:13 IST" name="setReport" finished-at="2021-09-02T20:30:13 IST" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setReport -->
-        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2]" started-at="2021-09-02T20:30:13 IST" name="initialization" finished-at="2021-09-02T20:30:22 IST" duration-ms="9218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qaautomation.tests.AccountPageTest.DoVerifyUsername() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method signature="DoVerifyUsername()[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2]" started-at="2021-09-02T20:30:22 IST" name="DoVerifyUsername" finished-at="2021-09-02T20:30:43 IST" duration-ms="20167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DoVerifyUsername -->
-        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2]" started-at="2021-09-02T20:30:43 IST" name="quiteBrowser" finished-at="2021-09-02T20:30:43 IST" duration-ms="525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DoVerifyUsername status=SUCCESS method=AccountPageTest.DoVerifyUsername()[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quiteBrowser -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.qaautomation.tests.AccountPageTest@6d4d66d2]" started-at="2021-09-02T20:31:39 IST" name="flushReport" finished-at="2021-09-02T20:31:39 IST" duration-ms="301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushReport -->
-      </class> <!-- com.qaautomation.tests.AccountPageTest -->
-    </test> <!-- AccountPageTest -->
-    <test started-at="2021-09-02T20:30:13 IST" name="RegisterPageTest" finished-at="2021-09-02T20:31:39 IST" duration-ms="85816">
+    <test started-at="2021-09-02T22:21:41 IST" name="RegisterPageTest" finished-at="2021-09-02T22:22:58 IST" duration-ms="76499">
       <class name="com.qaautomation.tests.RegisterPageTest">
-        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@3e27aa33]" started-at="2021-09-02T20:30:14 IST" name="initialization" finished-at="2021-09-02T20:30:22 IST" duration-ms="7641" status="PASS">
+        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@750e2b97]" started-at="2021-09-02T22:21:42 IST" name="initialization" finished-at="2021-09-02T22:21:45 IST" duration-ms="2741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="doRegisterWithData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@3e27aa33]" started-at="2021-09-02T20:30:22 IST" name="doRegisterWithData" data-provider="commonDataProvider" finished-at="2021-09-02T20:31:38 IST" duration-ms="76633" status="FAIL">
+        <test-method signature="doRegisterWithData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@750e2b97]" started-at="2021-09-02T22:21:45 IST" name="doRegisterWithData" data-provider="commonDataProvider" finished-at="2021-09-02T22:22:57 IST" duration-ms="72396" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,24 +95,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegisterWithData -->
-        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@3e27aa33]" started-at="2021-09-02T20:31:38 IST" name="quiteBrowser" finished-at="2021-09-02T20:31:39 IST" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@750e2b97]" started-at="2021-09-02T22:22:57 IST" name="quiteBrowser" finished-at="2021-09-02T22:22:58 IST" duration-ms="773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doRegisterWithData status=FAILURE method=RegisterPageTest.doRegisterWithData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@3e27aa33] output={null}]]]>
+                <![CDATA[[TestResult name=doRegisterWithData status=FAILURE method=RegisterPageTest.doRegisterWithData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaautomation.tests.RegisterPageTest@750e2b97] output={null}]]]>
               </value>
             </param>
           </params>
@@ -189,5 +126,73 @@ at java.base/java.lang.Thread.run(Thread.java:831)
         </test-method> <!-- quiteBrowser -->
       </class> <!-- com.qaautomation.tests.RegisterPageTest -->
     </test> <!-- RegisterPageTest -->
+    <test started-at="2021-09-02T22:22:58 IST" name="HomePageTest" finished-at="2021-09-02T22:23:08 IST" duration-ms="10523">
+      <class name="com.qaautomation.tests.HomePageTest">
+        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.HomePageTest@f0c8a99]" started-at="2021-09-02T22:22:58 IST" name="initialization" finished-at="2021-09-02T22:23:01 IST" duration-ms="2884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qaautomation.tests.HomePageTest.DoVerifyHomePage() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="DoVerifyHomePage()[pri:0, instance:com.qaautomation.tests.HomePageTest@f0c8a99]" started-at="2021-09-02T22:23:01 IST" name="DoVerifyHomePage" finished-at="2021-09-02T22:23:08 IST" duration-ms="7303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoVerifyHomePage -->
+        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.HomePageTest@f0c8a99]" started-at="2021-09-02T22:23:08 IST" name="quiteBrowser" finished-at="2021-09-02T22:23:08 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DoVerifyHomePage status=SUCCESS method=HomePageTest.DoVerifyHomePage()[pri:0, instance:com.qaautomation.tests.HomePageTest@f0c8a99] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- com.qaautomation.tests.HomePageTest -->
+    </test> <!-- HomePageTest -->
+    <test started-at="2021-09-02T22:23:08 IST" name="AccountPageTest" finished-at="2021-09-02T22:23:32 IST" duration-ms="23548">
+      <class name="com.qaautomation.tests.AccountPageTest">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff]" started-at="2021-09-02T22:21:27 IST" name="setReport" finished-at="2021-09-02T22:21:28 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method is-config="true" signature="initialization(java.lang.reflect.Method)[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff]" started-at="2021-09-02T22:23:08 IST" name="initialization" finished-at="2021-09-02T22:23:11 IST" duration-ms="2690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qaautomation.tests.AccountPageTest.DoVerifyUsername() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="DoVerifyUsername()[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff]" started-at="2021-09-02T22:23:11 IST" name="DoVerifyUsername" finished-at="2021-09-02T22:23:31 IST" duration-ms="20318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoVerifyUsername -->
+        <test-method is-config="true" signature="quiteBrowser(org.testng.ITestResult)[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff]" started-at="2021-09-02T22:23:31 IST" name="quiteBrowser" finished-at="2021-09-02T22:23:32 IST" duration-ms="537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DoVerifyUsername status=SUCCESS method=AccountPageTest.DoVerifyUsername()[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.qaautomation.tests.AccountPageTest@54c5a2ff]" started-at="2021-09-02T22:23:32 IST" name="flushReport" finished-at="2021-09-02T22:23:32 IST" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.qaautomation.tests.AccountPageTest -->
+    </test> <!-- AccountPageTest -->
   </suite> <!-- Suite -->
 </testng-results>
