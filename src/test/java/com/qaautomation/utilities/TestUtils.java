@@ -61,13 +61,17 @@ public class TestUtils {
 		select.selectByVisibleText(VisibleText);
 	}
 
-	public static String getScreenShots(WebDriver driver, String FileName) throws IOException {
+	public static String getScreenShots(WebDriver driver, String FileName) {
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File Source = ts.getScreenshotAs(OutputType.FILE);
 		String FileDestination = System.getProperty("user.dir") + "\\FailedTestCases\\" + FileName + ".png";
 		File destinationFile = new File(FileDestination);
-		FileUtils.copyFile(Source, destinationFile);
+		try {
+			FileUtils.copyFile(Source, destinationFile);
+		} catch (IOException e) {
+			System.out.println("Capture Screenshot" +e.getMessage());
+		}
 
 		return FileDestination;
 	}

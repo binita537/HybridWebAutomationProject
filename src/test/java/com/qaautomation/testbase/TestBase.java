@@ -19,10 +19,12 @@ import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.qaautomation.utilities.TestUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -31,9 +33,9 @@ public class TestBase {
 	public WebDriver driver;
 	public Properties property;
 	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
-	public ExtentReports extent;
-	public ExtentSparkReporter htmlrepoter;
-	public ExtentTest test;
+	public static ExtentReports extent;
+	public  static ExtentSparkReporter htmlrepoter;
+	public  static ExtentTest test;
 
 	public TestBase() {
 
@@ -114,7 +116,10 @@ public class TestBase {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + "   " + "  FAILED", ExtentColor.RED));
-			test.fail(result.getThrowable());
+			String ScreenShotPath=TestUtils.getScreenShots(driver,result.getName());
+			test.fail(result.getThrowable().getMessage(),MediaEntityBuilder.createScreenCaptureFromPath(ScreenShotPath).build());
+		
+			
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + "   " + "  PASSED", ExtentColor.GREEN));
 

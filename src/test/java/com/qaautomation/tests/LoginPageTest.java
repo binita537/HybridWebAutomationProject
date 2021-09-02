@@ -13,7 +13,7 @@ public class LoginPageTest extends TestBase {
 
 	
 	
-
+	
 	LoginPage loginpage;
 	HomePage homepage;
 	AccountPage accountpage;
@@ -27,6 +27,7 @@ public class LoginPageTest extends TestBase {
 
 		
 		test.log(Status.INFO, "Initilising the driver");
+	
 		testutils = new TestUtils(driver);
 		Thread.sleep(2000);
 		homepage = new HomePage(driver);

@@ -14,7 +14,7 @@ import com.qaautomation.utilities.TestUtils;
 
 public class AccountPageTest extends TestBase {
 
-	
+ 
 
 	LoginPage loginpage;
 	HomePage homepage;
@@ -26,6 +26,7 @@ public class AccountPageTest extends TestBase {
 	public void DoVerifyUsername() throws Exception {
 
 		test.log(Status.INFO, "Initilising the driver");
+		
 		
 		homepage = new HomePage(driver);
 		testutils = new TestUtils(driver);

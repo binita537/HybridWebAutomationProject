@@ -32,7 +32,7 @@ public class RegisterPageTest extends TestBase {
 		
 		test.log(Status.INFO, "Initilising the driver");
 		
-
+	
 		testutils = new TestUtils(driver);
 		homepage = new HomePage(driver);
 		Thread.sleep(2000);
