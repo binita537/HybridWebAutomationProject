@@ -4,7 +4,7 @@
 
 
 	<listeners>
-		<listener class-name="MyListeners"></listener>
+		<listener class-name="com.qaautomation.listerns.MyListeners"></listener>
 	</listeners>
 	
 	<test name="LoginPageTest">
