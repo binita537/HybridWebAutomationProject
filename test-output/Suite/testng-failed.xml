@@ -4,19 +4,6 @@
   <listeners>
     <listener class-name="com.qaautomation.listerns.MyListeners"/>
   </listeners>
-  <test thread-count="5" name="RegisterPageTest(failed)">
-    <classes>
-      <class name="com.qaautomation.tests.RegisterPageTest">
-        <methods>
-          <include name="doRegisterWithData" invocation-numbers="0"/>
-          <include name="setReport"/>
-          <include name="flushReport"/>
-          <include name="initialization"/>
-          <include name="quiteBrowser"/>
-        </methods>
-      </class> <!-- com.qaautomation.tests.RegisterPageTest -->
-    </classes>
-  </test> <!-- RegisterPageTest(failed) -->
   <test thread-count="5" name="AccountPageTest(failed)">
     <classes>
       <class name="com.qaautomation.tests.AccountPageTest">
