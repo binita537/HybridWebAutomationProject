@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.qaautomation.pagebase.PageBase;
 import com.qaautomation.utilities.TestUtils;
 
-public class AccountPage extends PageBase {
+public class AccountPage  {
 
 	private WebDriver driver;
 
@@ -70,7 +70,7 @@ public class AccountPage extends PageBase {
 
 	public AccountPage(WebDriver driver) {
 
-		super(driver);
+	this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -83,7 +83,7 @@ public class AccountPage extends PageBase {
 	public String doVerifyProfileName() {
 
 		
-		String Profilename=waitForElementToBePresent(driver, ProfileName).getText();
+		String Profilename=testutil.waitForElementToBePresent(driver, ProfileName).getText();
 		//Profilename=Profilename.substring(0,1).toUpperCase()+Profilename.substring(1,Profilename.length()-1);
 		return Profilename;
 
@@ -101,8 +101,8 @@ public class AccountPage extends PageBase {
 
 	
 	public void searchCources(String CourceName) {
-		waitForElementToBePresent(driver, SearchCourcesField).sendKeys(CourceName);
-		waitForElementToBeClickable(driver, SearchCourcesButton).click();
+		testutil.waitForElementToBePresent(driver, SearchCourcesField).sendKeys(CourceName);
+		testutil.waitForElementToBeClickable(driver, SearchCourcesButton).click();
 
 	}
 

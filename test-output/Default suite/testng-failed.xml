@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qaautomation.tests.RegisterPageTest">
+      <class name="com.qaautomation.tests.AccountPageTest">
         <methods>
-          <include name="doRegisterWithData" invocation-numbers="0"/>
+          <include name="DoVerifyUsername"/>
           <include name="setReport"/>
           <include name="flushReport"/>
           <include name="initialization"/>
           <include name="quiteBrowser"/>
         </methods>
-      </class> <!-- com.qaautomation.tests.RegisterPageTest -->
+      </class> <!-- com.qaautomation.tests.AccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
