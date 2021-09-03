@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qaautomation.pagebase.PageBase;
 import com.qaautomation.utilities.TestUtils;
 
-public class AccountPage  {
+public class AccountPage extends PageBase {
 
 	private WebDriver driver;
 
@@ -69,7 +70,7 @@ public class AccountPage  {
 
 	public AccountPage(WebDriver driver) {
 
-		this.driver = driver;
+		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 
@@ -82,7 +83,7 @@ public class AccountPage  {
 	public String doVerifyProfileName() {
 
 		
-		String Profilename=testutil.waitForElementToBePresent(driver, ProfileName).getText();
+		String Profilename=waitForElementToBePresent(driver, ProfileName).getText();
 		//Profilename=Profilename.substring(0,1).toUpperCase()+Profilename.substring(1,Profilename.length()-1);
 		return Profilename;
 
@@ -100,8 +101,8 @@ public class AccountPage  {
 
 	
 	public void searchCources(String CourceName) {
-		testutil.waitForElementToBePresent(driver, SearchCourcesField).sendKeys(CourceName);
-		testutil.waitForElementToBePresent(driver, SearchCourcesButton).click();
+		waitForElementToBePresent(driver, SearchCourcesField).sendKeys(CourceName);
+		waitForElementToBeClickable(driver, SearchCourcesButton).click();
 
 	}
 
